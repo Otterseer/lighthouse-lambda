@@ -27,7 +27,7 @@ const createLighthouse = require('lighthouse-lambda')
 exports.handler = function (event, context, callback) {
   Promise.resolve()
     .then(() => createLighthouse('https://example.com', { logLevel: 'info' }))
-    .then(({ chrome, results }) => {
+    .then(({ chrome, log, results }) => {
           // Do something with `results`
           return chrome.kill().then(() => callback(null))
         })
