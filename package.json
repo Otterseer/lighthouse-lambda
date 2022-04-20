@@ -39,7 +39,7 @@
   "homepage": "https://github.com/AlanSwenson/lighthouse-lambda#readme",
   "dependencies": {
     "chrome-aws-lambda": "^9.0",
-    "lighthouse": "github:Otterseer/lighthouse#master",
+    "lighthouse": "^9.5",
     "puppeteer-core": "^9.0"
   },
   "devDependencies": {
